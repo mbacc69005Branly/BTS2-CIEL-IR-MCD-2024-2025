@@ -124,7 +124,8 @@ php artisan make:migration create_champion_range_table
 php artisan make:migration create_champion_region_table
 ```
 
-**Question :** Pourquoi créons-nous des tables séparées pour `champion_position`, `champion_region`, `champion_specie` et `champion_range` ?
+**Question :** Pourquoi créons-nous des tables séparées pour `champion_position`, `champion_region`, `champion_specie` et `champion_range` ?  
+Parce qu'on voudrait des tables différentes pour champion uniquement.
 
 ### 2. Définition des structures des tables
 
@@ -166,7 +167,8 @@ public function up()
 
 **Tâche :** Créez des structures similaires pour les autres tables, en adaptant les champs selon les besoins de chaque entité.
 
-**Question :** Quelles différences notez-vous entre la structure de la table champions et celle des autres tables ?
+**Question :** Quelles différences notez-vous entre la structure de la table champions et celle des autres tables ?  
+On note que la seule table << champions >> dispode des clés secondaires.
 
 ### 3. Création des modèles
 
