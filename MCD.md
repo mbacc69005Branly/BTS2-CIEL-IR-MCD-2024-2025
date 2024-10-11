@@ -110,16 +110,16 @@ Relation :
 - Une Compétence "appartient à" un seul Champion
 
 Cardinalités :
-- Champion vers Abilité : (1,n) - Un champion possède au moins une abilité, et peut en avoir plusieurs.
-- Abilité vers Champion : (1,1) - Une abilité appartient à un et un seul champion.
+- Champion vers Compétence : (1,n) - Un champion possède au moins une compétence et peut en avoir plusieurs.
+- Compétence vers Champion : (1,1) - Une compétence appartient à un et un seul champion.
 
 Représentation simplifiée :
 
 ![image](https://github.com/user-attachments/assets/27b4c2bb-5fd2-4bb7-bb6f-04a89bae20e2)
 
 Dans ce modèle :
-- Chaque champion doit avoir au moins une abilité (cardinalité minimale 1) et peut en avoir plusieurs (cardinalité maximale n).
-- Chaque abilité appartient exactement à un champion (cardinalité 1,1).
+- Chaque champion doit avoir au moins une compétence (cardinalité minimale 1) et peut en avoir plusieurs (cardinalité maximale n).
+- Chaque compétence appartient exactement à un champion (cardinalité 1,1).
 
 ### 4. L'outil draw.io / diagram.net
 
@@ -138,8 +138,6 @@ Dans ce modèle :
 ### 5. Exercice
 
 Utiliser diagram.net pour refaire l'exemple de la partie 3.
-
-Une fois votre diagramme fini, vous pouvez passer à [la suite](TP_MCD.md).
 
 ## Partie 2 - MCD étendu
 
@@ -168,6 +166,7 @@ Voici une liste des types de données fréquemment utilisés dans un MCD étendu
 - TIME : Heure (HH:MM:SS)
 - DATETIME : Date et heure
 - BOOLEAN : Valeur booléenne (vrai/faux)
+- BASE64 : Fichier comme les images, il s'agit d'un type avancé
 
 ### 1.3 Relations et Cardinalités
 
@@ -208,3 +207,5 @@ Dans cet exemple :
 4. Communication améliorée : Les développeurs et les administrateurs de bases de données ont une vision plus claire des exigences en matière de données.
 
 En utilisant un MCD étendu, vous créez une base solide pour la conception de votre base de données, en combinant la clarté conceptuelle du MCD classique avec la précision technique nécessaire pour l'implémentation.
+
+Une fois votre diagramme fini, vous pouvez passer à [la suite](TP_MCD.md).

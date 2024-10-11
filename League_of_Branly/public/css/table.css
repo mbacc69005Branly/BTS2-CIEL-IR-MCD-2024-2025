@@ -1,0 +1,28 @@
+/************************************/
+/************** TABLES **************/
+/************************************/
+
+.table > :not(caption) > * > * {
+    background-color: unset;
+    color:unset;
+    border-color: var(--grey-3);
+}
+
+.table {
+    color: var(--gold-1) !important;
+}
+
+.card {
+    color: var(--gold-1) !important;
+    border-color: var(--gold-5) !important;
+}
+
+.card:hover {
+    background-color: var(--blue-4);;
+    border-color: var(--gold-5) !important;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: contain;
+}

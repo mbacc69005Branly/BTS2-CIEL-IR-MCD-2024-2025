@@ -12,7 +12,15 @@ L'usage des ces documents en dehors de la formation nommée ci-dessus est formel
 
 ## Sommaire
 
-1. [Contexte](introduction.md)
-2. [Modèle Conceptuel de Données](MCD.md)
-3. [TP MCD](TP_MCD.md)
-4. [TP Intégration du MCD dans un site web](TP_integration_MCD.md)
+* [Contexte](introduction.md)
+* Cours :
+  * [Modèle Conceptuel de Données](./MCD.md)
+  * [Migrations avec Laravel](./Migration.md)
+  * [Rappels de SQL](./SQL.md)
+  * [Le MVC](./MVC.md)
+  * [Les opérations CRUD en base de données](./CRUD.md)
+  * [LEs routes sous Laravel](./routes.md)
+* TP :
+  1. [TP MCD](TP_MCD.md)
+  2. [TP Intégration du MCD dans un site web](TP_integration_MCD.md)
+  3. [TP SQL](./SQL.md)
