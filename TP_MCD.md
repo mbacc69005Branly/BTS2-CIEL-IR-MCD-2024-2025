@@ -9,13 +9,13 @@ League of Legends est un jeu populaire avec de nombreux champions, chacun ayant 
 ## Étapes et Questions de Réflexion
 
 ### 1. Identification des entités principales
-- Quel est l'élément central du jeu League of Legends que nous cherchons à modéliser ?
+- Quel est l'élément central du jeu League of Legends que nous cherchons à modéliser ?  
 Nous cherchons l'élément d'un champion.
 
 ### 2. Définition des attributs
-- Comment pouvez-vous représenter l'identifiant unique d'un champion dans le modèle ?
+- Comment pouvez-vous représenter l'identifiant unique d'un champion dans le modèle ?  
 On représente avec une clé unique, dont Primary key en PK puis Identification en ID_Name.
-- Quels informations sont uniques à un champion ? Les informations non uniques seront alors des entités secondaires.
+- Quels informations sont uniques à un champion ? Les informations non uniques seront alors des entités secondaires.  
 Ce sont le Genre, la ressource et l'année de sortie.
 
 ### 3. Identification des entités secondaires
