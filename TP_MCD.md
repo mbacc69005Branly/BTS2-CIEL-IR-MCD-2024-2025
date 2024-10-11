@@ -10,20 +10,26 @@ League of Legends est un jeu populaire avec de nombreux champions, chacun ayant 
 
 ### 1. Identification des entités principales
 - Quel est l'élément central du jeu League of Legends que nous cherchons à modéliser ?
+Nous cherchons l'élément d'un champion.
 
 ### 2. Définition des attributs
 - Comment pouvez-vous représenter l'identifiant unique d'un champion dans le modèle ?
+On représente avec une clé unique, dont Primary key en PK puis Identification en ID_Name.
 - Quels informations sont uniques à un champion ? Les informations non uniques seront alors des entités secondaires.
+Ce sont le Genre, la ressource et l'année de sortie.
 
 ### 3. Identification des entités secondaires
 - Outre les champions, quelles autres catégories d'informations sont importantes dans League of Legends et pourront être modélisées sous forme d'entités ?
+Ce sont des clés secondaire, donc foreign key en FK.
 
 ### 4. Définition des attributs pour les entités secondaires
 - Pour chaque entité secondaire que vous avez identifiée, quelles informations sont nécessaires pour la décrire ?
 
+
 ### 5. Établissement des relations
 - Quelles sont les connexions logiques entre l'entité principale (champion) et les entités secondaires ?
 - Comment exprimeriez-vous ces connexions en termes de relations dans un MCD ?
+On attribue 1 à une entité principale. On attribue 1, plusieurs ou 0 à des entités secondaires. 
 
 ### 6. Détermination des cardinalités
 - Pour chaque relation que vous avez identifiée, réfléchissez :
