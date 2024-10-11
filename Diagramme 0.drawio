@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15" version="24.7.17">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0" version="24.7.16">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="228" dy="675" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="464" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -102,7 +102,7 @@
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28hwh20PYcVg1PHCezV0-193" value="Catégorie" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+        <mxCell id="28hwh20PYcVg1PHCezV0-193" value="Catégorie - Gran Turismo Sport Seulement" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
           <mxGeometry x="450" y="60" width="250" height="120" as="geometry" />
         </mxCell>
         <mxCell id="28hwh20PYcVg1PHCezV0-194" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="28hwh20PYcVg1PHCezV0-193" vertex="1">
@@ -192,7 +192,7 @@
             <mxRectangle width="220" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28hwh20PYcVg1PHCezV0-215" value="Performance" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
+        <mxCell id="28hwh20PYcVg1PHCezV0-215" value="Performance - Gran Turismo 7 Seulement" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
           <mxGeometry x="450" y="320" width="250" height="120" as="geometry" />
         </mxCell>
         <mxCell id="28hwh20PYcVg1PHCezV0-216" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="28hwh20PYcVg1PHCezV0-215" vertex="1">
@@ -234,7 +234,7 @@
             <mxRectangle width="220" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28hwh20PYcVg1PHCezV0-225" value="Gran Turismo 7" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="28hwh20PYcVg1PHCezV0-225" value="Gran Turismo 7&lt;div&gt;Véhicule&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="165" y="10" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="28hwh20PYcVg1PHCezV0-226" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="1" vertex="1">
@@ -605,6 +605,42 @@
           <mxGeometry x="30" width="190" height="30" as="geometry">
             <mxRectangle width="190" height="30" as="alternateBounds" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-1" value="--&amp;gt;&lt;div&gt;Marque&lt;/div&gt;&lt;div&gt;Modèle&lt;/div&gt;&lt;div&gt;Design&lt;/div&gt;&lt;div&gt;Énergie&lt;/div&gt;&lt;div&gt;Type véhicule&lt;br&gt;&lt;/div&gt;&lt;div&gt;--&amp;gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="90" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-2" value="--&amp;gt;&lt;div&gt;Marque&lt;/div&gt;&lt;div&gt;Modèle&lt;/div&gt;&lt;div&gt;Design&lt;/div&gt;&lt;div&gt;Énergie&lt;/div&gt;&lt;div&gt;Personnalisation&lt;/div&gt;&lt;div&gt;Type véhicule&lt;/div&gt;&lt;div&gt;--&amp;gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="230" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-3" value="&amp;lt;--&lt;div&gt;Catégorie N100 à 1000&lt;/div&gt;&lt;div&gt;Gr.X - Spéciale&lt;/div&gt;&lt;div&gt;Gr.4 - BV&lt;/div&gt;&lt;div&gt;Gr.3 - MV&lt;/div&gt;&lt;div&gt;Gr.2 - HV&lt;/div&gt;&lt;div&gt;Gr.1 - THV&lt;/div&gt;&lt;div&gt;Gr.B - Terre&lt;/div&gt;&lt;div&gt;&amp;lt;--&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="105" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-5" value="&amp;lt;--&lt;div&gt;Année du fabrication&lt;/div&gt;&lt;div&gt;&amp;lt;--&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="235" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-7" value="&amp;lt;--&lt;div&gt;Points de performance sur chaque véhicule&lt;/div&gt;&lt;div&gt;&amp;lt;--&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="365" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-8" value="&amp;lt;--&lt;div&gt;Puissance du véhicule&lt;/div&gt;&lt;div&gt;Ch, kW, Nm&lt;/div&gt;&lt;div&gt;&amp;lt;--&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="495" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-9" value="&amp;lt;--&lt;div&gt;Poids du véhicule&lt;/div&gt;&lt;div&gt;&amp;lt;--&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="625" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-10" value="&amp;lt;--&lt;div&gt;Types des pneus&lt;/div&gt;&lt;div&gt;Confort - C&lt;/div&gt;&lt;div&gt;Sport - S&lt;/div&gt;&lt;div&gt;Course - Cr/R&lt;/div&gt;&lt;div&gt;Intermédiaire - IM&lt;/div&gt;&lt;div&gt;Pluie - W&lt;/div&gt;&lt;div&gt;Terre/Neige - D/SW&lt;/div&gt;&lt;div&gt;Niveau : ST, T, M, D&lt;/div&gt;&lt;div&gt;&amp;lt;--&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="885" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-11" value="&amp;lt;--&lt;div&gt;Dimensions du véhicule&lt;/div&gt;&lt;div&gt;&amp;lt;--&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="755" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-12" value="&amp;lt;--&lt;div&gt;Moteur&lt;/div&gt;&lt;div&gt;&amp;lt;--&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="1015" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-13" value="Primary Key - Entier" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="880" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-14" value="ID_C - Identification unique" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="930" width="80" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
