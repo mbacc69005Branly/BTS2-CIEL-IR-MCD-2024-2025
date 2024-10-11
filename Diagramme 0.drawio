@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0" version="24.7.16">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="464" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="317" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -126,7 +126,7 @@
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28hwh20PYcVg1PHCezV0-199" value="name varchar(40)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="28hwh20PYcVg1PHCezV0-197" vertex="1">
+        <mxCell id="28hwh20PYcVg1PHCezV0-199" value="name varchar(5)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="28hwh20PYcVg1PHCezV0-197" vertex="1">
           <mxGeometry x="30" width="220" height="30" as="geometry">
             <mxRectangle width="220" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -216,7 +216,7 @@
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28hwh20PYcVg1PHCezV0-221" value="name varchar(30)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="28hwh20PYcVg1PHCezV0-219" vertex="1">
+        <mxCell id="28hwh20PYcVg1PHCezV0-221" value="name varchar(10)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="28hwh20PYcVg1PHCezV0-219" vertex="1">
           <mxGeometry x="30" width="220" height="30" as="geometry">
             <mxRectangle width="220" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -522,7 +522,7 @@
             <mxRectangle width="220" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28hwh20PYcVg1PHCezV0-305" value="" style="endArrow=ERone;html=1;rounded=0;exitX=0.999;exitY=1.004;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;startArrow=ERmandOne;startFill=0;endFill=0;" parent="1" source="28hwh20PYcVg1PHCezV0-178" target="28hwh20PYcVg1PHCezV0-206" edge="1">
+        <mxCell id="28hwh20PYcVg1PHCezV0-305" value="" style="endArrow=ERmandOne;html=1;rounded=0;exitX=0.999;exitY=1.004;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="28hwh20PYcVg1PHCezV0-178" target="28hwh20PYcVg1PHCezV0-206" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="340" y="200" as="sourcePoint" />
             <mxPoint x="390" y="150" as="targetPoint" />
@@ -558,7 +558,7 @@
             <mxPoint x="410" y="750" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="28hwh20PYcVg1PHCezV0-312" value="" style="endArrow=ERone;html=1;rounded=0;exitX=0.899;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;startArrow=ERmandOne;startFill=0;" parent="1" source="28hwh20PYcVg1PHCezV0-184" target="28hwh20PYcVg1PHCezV0-282" edge="1">
+        <mxCell id="28hwh20PYcVg1PHCezV0-312" value="" style="endArrow=ERmandOne;html=1;rounded=0;exitX=0.899;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;startArrow=ERone;startFill=0;" parent="1" source="28hwh20PYcVg1PHCezV0-184" target="28hwh20PYcVg1PHCezV0-282" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="340" y="190" as="sourcePoint" />
             <mxPoint x="340" y="390" as="targetPoint" />
@@ -606,16 +606,16 @@
             <mxRectangle width="190" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SwrFZ1gC9gBgGhElad9k-1" value="--&amp;gt;&lt;div&gt;Marque&lt;/div&gt;&lt;div&gt;Modèle&lt;/div&gt;&lt;div&gt;Design&lt;/div&gt;&lt;div&gt;Énergie&lt;/div&gt;&lt;div&gt;Type véhicule&lt;br&gt;&lt;/div&gt;&lt;div&gt;--&amp;gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="20" y="90" width="80" height="30" as="geometry" />
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-1" value="--&amp;gt;&lt;div&gt;Marque&lt;/div&gt;&lt;div&gt;Modèle&lt;/div&gt;&lt;div&gt;Pays&lt;/div&gt;&lt;div&gt;Design&lt;/div&gt;&lt;div&gt;Énergie&lt;/div&gt;&lt;div&gt;Type véhicule&lt;br&gt;&lt;/div&gt;&lt;div&gt;--&amp;gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="105" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="SwrFZ1gC9gBgGhElad9k-2" value="--&amp;gt;&lt;div&gt;Marque&lt;/div&gt;&lt;div&gt;Modèle&lt;/div&gt;&lt;div&gt;Design&lt;/div&gt;&lt;div&gt;Énergie&lt;/div&gt;&lt;div&gt;Personnalisation&lt;/div&gt;&lt;div&gt;Type véhicule&lt;/div&gt;&lt;div&gt;--&amp;gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="20" y="230" width="80" height="30" as="geometry" />
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-2" value="--&amp;gt;&lt;div&gt;Marque&lt;/div&gt;&lt;div&gt;Modèle&lt;/div&gt;&lt;div&gt;Pays&lt;/div&gt;&lt;div&gt;Design&lt;/div&gt;&lt;div&gt;Énergie&lt;/div&gt;&lt;div&gt;Personnalisation&lt;/div&gt;&lt;div&gt;Type véhicule&lt;/div&gt;&lt;div&gt;--&amp;gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="235" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SwrFZ1gC9gBgGhElad9k-3" value="&amp;lt;--&lt;div&gt;Catégorie N100 à 1000&lt;/div&gt;&lt;div&gt;Gr.X - Spéciale&lt;/div&gt;&lt;div&gt;Gr.4 - BV&lt;/div&gt;&lt;div&gt;Gr.3 - MV&lt;/div&gt;&lt;div&gt;Gr.2 - HV&lt;/div&gt;&lt;div&gt;Gr.1 - THV&lt;/div&gt;&lt;div&gt;Gr.B - Terre&lt;/div&gt;&lt;div&gt;&amp;lt;--&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="710" y="105" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="SwrFZ1gC9gBgGhElad9k-5" value="&amp;lt;--&lt;div&gt;Année du fabrication&lt;/div&gt;&lt;div&gt;&amp;lt;--&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-5" value="&amp;lt;--&lt;div&gt;Année du fabrication&lt;/div&gt;&lt;div&gt;Date du fabrication&lt;/div&gt;&lt;div&gt;&amp;lt;--&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="710" y="235" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SwrFZ1gC9gBgGhElad9k-7" value="&amp;lt;--&lt;div&gt;Points de performance sur chaque véhicule&lt;/div&gt;&lt;div&gt;&amp;lt;--&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -636,11 +636,11 @@
         <mxCell id="SwrFZ1gC9gBgGhElad9k-12" value="&amp;lt;--&lt;div&gt;Moteur&lt;/div&gt;&lt;div&gt;&amp;lt;--&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="710" y="1015" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="SwrFZ1gC9gBgGhElad9k-13" value="Primary Key - Entier" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="70" y="880" width="100" height="30" as="geometry" />
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-13" value="Primary Key&lt;div&gt;Entier -&amp;gt; PK&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="880" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="SwrFZ1gC9gBgGhElad9k-14" value="ID_C - Identification unique" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="80" y="930" width="80" height="30" as="geometry" />
+        <mxCell id="SwrFZ1gC9gBgGhElad9k-14" value="ID_Name - Identification unique" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="930" width="120" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
