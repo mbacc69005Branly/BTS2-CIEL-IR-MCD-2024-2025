@@ -79,13 +79,13 @@ Vous travaillez sur une base de données SQLite qui gère les informations sur l
 ### 1. Création d'une table
 Créez une table `champion` avec les colonnes appropriées basées sur le MCD fourni. Après l'exécution de la requête, votre table `champion` doit avoir strictement la même structure que la table `champions`.
 ```SQL
-CREATE TABLE champion (
+CREATE TABLE champions (
 id_champion INT AUTO_INCREMENT PRIMARY KEY,
 name varchar(50) NOT NULL,
 lore text,
 title varchar(50),
 id_gender int,
-id_resources int,
+id_resource int,
 id_year int,
 FOREIGN KEY (id_gender) REFERENCES genders(id_gender),
 FOREIGN KEY (id_resources) REFERENCES resources(id_resources),
@@ -96,7 +96,7 @@ FOREIGN KEY (id_year) REFERENCES year(id_year)
 ### 2. Modification d'une table
 Ajoutez une nouvelle colonne `popularity` de type INT à la table `champions`.
 ```SQL
-ALTER TABLE "champion" ADD COLUMN "popularity" INTEGER;
+ALTER TABLE "champions" ADD COLUMN "popularity" INTEGER;
 ```
 
 ### 3. Insertion de données
@@ -112,6 +112,13 @@ Insérez le champion Fiddlesticks dans la table `champions` avec les attributs s
 - Région principale : Runeterra
 - Année de sortie : 2009
 - Popularité : 5 (sur une échelle de 1 à 10)
+
+```SQL
+INSERT INTO champions (id_champion, name, title, lore, gender, resources, year, created_at, updated_at);
+```  
+```SQL
+INSERT INTO champions VALUES ('11','Fiddlesticks', 'The Ancient Fear', 'Something has awoken in Runeterra. Something ancient. Something terrible. The ageless horror known as Fiddlesticks stalks the edges of mortal society, drawn to areas thick with paranoia where it feeds upon terrorized victims. Wielding a jagged scythe, the haggard, makeshift creature reaps fear itself, shattering the minds of those unlucky enough to survive in its wake. Beware the sounding of the crow, or the whispering of the shape that appears almost human... Fiddlesticks has returned.', '3', '1', '9', NULL, NULL);
+```
 
 Assurez-vous d'insérer également les données nécessaires dans les tables pivots associées (comme `champion_specie` par exemple).
 
