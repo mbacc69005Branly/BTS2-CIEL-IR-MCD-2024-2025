@@ -13,16 +13,27 @@
 }
 
 .card {
+    background: linear-gradient(to left, var(--blue-6), var(--blue-7));
     color: var(--gold-1) !important;
     border-color: var(--gold-5) !important;
 }
 
 .card:hover {
-    background-color: var(--blue-4);;
+    background: linear-gradient(to left, var(--blue-3), var(--blue-4));
     border-color: var(--gold-5) !important;
 }
 
 .card-img-top {
-    height: 200px;
+    height: 100px;
     object-fit: contain;
+}
+
+.clickable-row, .clickable-card {
+    cursor: pointer;
+}
+.clickable-row:hover {
+    background-color: #f5f5f5;
+}
+.clickable-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }

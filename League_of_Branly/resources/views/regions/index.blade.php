@@ -2,12 +2,12 @@
 
 @section('content')
 <div class="container">
-    <x-page-header title="Regions" :create-route="route('regions.create')" />
-
     <x-table-grid-view
-        title="regions"
+        title="Regions"
+        style="h1"
         :items="$regions"
         :columns="['name' => 'Name']"
+        :create-route="route('regions.create')"
         route-prefix="regions" />
 </div>
 @endsection

@@ -17,99 +17,132 @@ Prenons l'exemple de la gestion des champions dans League of Branly pour illustr
 
 ### 1. Create (Créer)
 
-#### Route :
-```php
-Route::post('/champions', [ChampionController::class, 'store'])->name('champions.store');
-```
+La création d'un champion est séparée dans deux fonctions distinctes.
+- La route GET `champions/create` va afficher le formulaire permettant la création d'un champion
+- La route POST `champions` qui va vérifier les informations récupérées par le formulaire et les persister dans la base de données
 
 #### Méthode du contrôleur :
 ```php
-public function store(Request $request)
-{
-    $validatedData = $request->validate([
-        'name' => 'required|max:50',
-        'title' => 'required|max:100',
-        'lore' => 'required',
-        'difficulty' => 'required|integer|min:1|max:10',
-        'release_year' => 'required|integer|min:2009',
-        // Autres validations...
-    ]);
+    /**
+     * Show the form for creating a new champion.
+     */
+    public function create()
+    {
+        $genders = Gender::all();
+        $positions = Position::all();
+        $species = Specie::all();
+        $resources = Resource::all();
+        $ranges = Range::all();
+        $regions = Region::all();
+        $years = Year::orderBy('year', 'desc')->get(); // Ajoutez cette ligne
 
-    $champion = Champion::create($validatedData);
+        return view('champions.create', compact('genders', 'positions', 'species', 'resources', 'ranges', 'regions', 'years'));
+    }
 
-    return redirect()->route('champions.index')
-        ->with('success', 'Champion créé avec succès.');
-}
+    /**
+     * Store a newly created champion in storage.
+     */
+    public function store(Request $request)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'years_id' => 'required|exists:years,years_id',
+            'gender_id' => 'required|exists:genders,id',
+            'resource_id' => 'required|exists:resources,id',
+            'species' => 'required|array',
+            'species.*' => 'exists:species,id',
+            'range_type' => 'required|array',
+            'range_type.*' => 'exists:range_type,id',
+            'positions' => 'required|array',
+            'positions.*' => 'exists:positions,id',
+            'regions' => 'required|array',
+            'regions.*' => 'exists:regions,id',
+        ]);
+
+        // Convert the release year to a date
+        $validatedData['year_id'] = Carbon::createFromDate($validatedData['release_year'], 1, 1)->toDateString();
+        unset($validatedData['release_year']);
+
+        $champion = Champion::create($validatedData);
+
+        $champion->positions()->attach($request->positions);
+        $champion->regions()->attach($request->regions);
+        $champion->rangeTypes()->attach($request->ranges);
+        $champion->species()->attach($request->species);
+
+        return redirect()->route('champions.index')->with('success', 'Champion created successfully!');
+    }
 ```
 
 ### 2. Read (Lire)
 
-#### Routes :
-```php
-Route::get('/champions', [ChampionController::class, 'index'])->name('champions.index');
-Route::get('/champions/{champion}', [ChampionController::class, 'show'])->name('champions.show');
-```
+On distingue deux lectures différentes :
+- La route GET `champions` va afficher l'ensemble des champions
+- La route GET `champions/{champion_id}` va afficher le champion dont la clé primaire est `champion_id`
 
 #### Méthodes du contrôleur :
 ```php
-public function index()
-{
-    $champions = Champion::all();
-    return view('champions.index', compact('champions'));
-}
+    /**
+     * Display a listing of all champions.
+     */
+    public function index()
+    {
+        $champions = Champion::all();
+        return view('champions.index', compact('champions'));
+    }
 
-public function show(Champion $champion)
-{
-    return view('champions.show', compact('champion'));
-}
+    /**
+     * Display the specified champion.
+     */
+    public function show(string $id)
+    {
+        $champion = Champion::find($id);
+        return view('champions.show', compact('champion'));
+    }
 ```
 
 ### 3. Update (Mettre à jour)
 
-#### Routes :
-```php
-Route::get('/champions/{champion}/edit', [ChampionController::class, 'edit'])->name('champions.edit');
-Route::put('/champions/{champion}', [ChampionController::class, 'update'])->name('champions.update');
-```
+De façon analogue à la création d'un champion, l'opération d'édition va être en deux méthodes :
+- La route GET `/champions/{champion}/edit` va afficher le formulaire permettant la modification d'un champion
+- La route PUT/PATCH `/champions/{champion}` qui va vérifier les informations récupérées par le formulaire et les persister dans la base de données
 
 #### Méthodes du contrôleur :
 ```php
-public function edit(Champion $champion)
-{
-    return view('champions.edit', compact('champion'));
-}
+    /**
+     * Show the form for editing the specified champion.
+     */
+    public function edit(string $id)
+    {
+        $champion = Champion::find($id);
+        return view('champions.edit', compact('champion'));
+    }
 
-public function update(Request $request, Champion $champion)
-{
-    $validatedData = $request->validate([
-        'name' => 'required|max:50',
-        'title' => 'required|max:100',
-        // Autres validations...
-    ]);
-
-    $champion->update($validatedData);
-
-    return redirect()->route('champions.index')
-        ->with('success', 'Champion mis à jour avec succès.');
-}
+    /**
+     * Update the specified champion in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        $champion = Champion::find($id);
+        $champion->update($request->all());
+        return redirect()->route('champions.index');
+    }
 ```
 
 ### 4. Delete (Supprimer)
 
-#### Route :
-```php
-Route::delete('/champions/{champion}', [ChampionController::class, 'destroy'])->name('champions.destroy');
-```
+Pour supprimer un champion, on utilise la route DESTROY `/champions/{champion}`.
 
 #### Méthode du contrôleur :
 ```php
-public function destroy(Champion $champion)
-{
-    $champion->delete();
-
-    return redirect()->route('champions.index')
-        ->with('success', 'Champion supprimé avec succès.');
-}
+    /**
+     * Remove the specified champion from storage.
+     */
+    public function destroy(string $id)
+    {
+        Champion::find($id)->delete();
+        return redirect()->route('champions.index');
+    }
 ```
 
 ## Implémentation dans les vues

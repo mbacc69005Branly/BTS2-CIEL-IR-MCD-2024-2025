@@ -146,7 +146,7 @@
     <div id="app">
         <x-navbar />
 
-        <main class="py-4 medium-body">
+        <main class="medium-body">
             @yield('content')
         </main>
 

@@ -60,6 +60,10 @@ h5, .h5 {
     letter-spacing: 0.075em;
 }
 
+p {
+    text-align: justify;
+}
+
 .medium-body {
     font-size: var(--h5-size);
     line-height: 1.42;
@@ -127,6 +131,11 @@ h5, .h5 {
     height: 40px;
     padding: 0px;
     border-color: var(--gold-3) !important;
+}
+
+.decoration {
+    width: 55px;
+    font-size: 20px;
 }
 
 /* Responsive adjustments */
