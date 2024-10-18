@@ -12,7 +12,7 @@ L'objectif de ce TP est de vous familiariser avec l'écriture de requêtes SQL, 
 erDiagram
     CHAMPION {
         int champion_id PK
-        varchar(50) name UNIQUE
+        varchar(50) name
         text lore
         varchar(50) title
         int gender_id FK
