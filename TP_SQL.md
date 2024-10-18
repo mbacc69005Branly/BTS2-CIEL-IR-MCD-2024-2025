@@ -12,8 +12,9 @@ L'objectif de ce TP est de vous familiariser avec l'écriture de requêtes SQL, 
 erDiagram
     CHAMPION {
         int champion_id PK
-        varchar(50) name
-        varchar(50) lore
+        varchar(50) name UNIQUE
+        text lore
+        varchar(50) title
         int gender_id FK
         int resource_id FK
         int year_id FK
@@ -80,6 +81,7 @@ Insérez le champion Fiddlesticks dans la table `champions` avec les attributs s
 - Espèce : Démon
 - Ressource : Mana
 - Portée : À distance
+- Position : Jungle
 - Région principale : Runeterra
 - Année de sortie : 2009
 - Popularité : 5 (sur une échelle de 1 à 10)
