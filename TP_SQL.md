@@ -9,12 +9,11 @@ L'objectif de ce TP est de vous familiariser avec l'écriture de requêtes SQL, 
 - L'exécution des migrations qui vous sont fournis dans ce repository `League_of_Branly/database/migrations`.
 - Si vous ne trouvez pas votre conteneur sur Docker Desktop :
     - Ouvrez un bloc note et copier/coller la commande suivante :
-```bash
-docker run -p 80:80 -p 443:443 -p 443:443/udp \
-    -v D:/csimon.SNIRW/League_of_Branly:/var/www/html \
-    shinsenter/laravel:latest
-```
-
+    ```bash
+    docker run -p 80:80 -p 443:443 -p 443:443/udp \
+        -v D:/csimon.SNIRW/League_of_Branly:/var/www/html \
+        shinsenter/laravel:latest
+    ```
     - Remplacez `csimon.SNIRW` par le nom de votre dossier dans le lecteur `D:`
     - Ouvrez un **bash** en **administrateur** avec le compte **.\tpdocker**
     - Collez la commande modifiée et exécutez là
