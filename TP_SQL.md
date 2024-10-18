@@ -1,4 +1,4 @@
-# TP SQL : Requêtes pour la base de données League of Legends
+![image](https://github.com/user-attachments/assets/73fa33ad-3642-4017-91ce-9cfc18aec792)# TP SQL : Requêtes pour la base de données League of Legends
 
 ## Objectif
 L'objectif de ce TP est de vous familiariser avec l'écriture de requêtes SQL, en utilisant le contexte de League of Branly. Vous pratiquerez la création et la modification de tables, ainsi que diverses opérations sur les données.
@@ -82,8 +82,8 @@ Créez une table `champion` avec les colonnes appropriées basées sur le MCD fo
 CREATE TABLE champions (
 id_champion INT AUTO_INCREMENT PRIMARY KEY,
 name varchar(50) NOT NULL,
-lore text,
 title varchar(50),
+lore text,
 id_gender int,
 id_resource int,
 id_year int,
@@ -119,11 +119,16 @@ INSERT INTO champions (id_champion, name, title, lore, gender, resources, year, 
 ```SQL
 INSERT INTO champions VALUES ('11','Fiddlesticks', 'The Ancient Fear', 'Something has awoken in Runeterra. Something ancient. Something terrible. The ageless horror known as Fiddlesticks stalks the edges of mortal society, drawn to areas thick with paranoia where it feeds upon terrorized victims. Wielding a jagged scythe, the haggard, makeshift creature reaps fear itself, shattering the minds of those unlucky enough to survive in its wake. Beware the sounding of the crow, or the whispering of the shape that appears almost human... Fiddlesticks has returned.', '3', '1', '9', NULL, NULL);
 ```
+![MM](https://github.com/user-attachments/assets/f122a2a4-faf7-4669-bc98-b522fcced921)
 
 Assurez-vous d'insérer également les données nécessaires dans les tables pivots associées (comme `champion_specie` par exemple).
 
 ### 4. Récupération de tous les champions
 Écrivez une requête SQL pour récupérer tous les champions, triés par nom.
+```SQL
+SELECT name FROM champions;
+```
+
 
 ### 5. Recherche de champions par nom
 Implémentez une requête qui permet de trouver des champions dont le nom contient une chaîne spécifique.
