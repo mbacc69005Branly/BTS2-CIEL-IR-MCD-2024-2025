@@ -78,9 +78,26 @@ Vous travaillez sur une base de données SQLite qui gère les informations sur l
 
 ### 1. Création d'une table
 Créez une table `champion` avec les colonnes appropriées basées sur le MCD fourni. Après l'exécution de la requête, votre table `champion` doit avoir strictement la même structure que la table `champions`.
+```SQL
+CREATE TABLE champion (
+id_champion INT AUTO_INCREMENT PRIMARY KEY,
+name varchar(50) NOT NULL,
+lore text,
+title varchar(50),
+id_gender int,
+id_resources int,
+id_year int,
+FOREIGN KEY (id_gender) REFERENCES genders(id_gender),
+FOREIGN KEY (id_resources) REFERENCES resources(id_resources),
+FOREIGN KEY (id_year) REFERENCES year(id_year)
+);
+```
 
 ### 2. Modification d'une table
 Ajoutez une nouvelle colonne `popularity` de type INT à la table `champions`.
+```SQL
+ALTER TABLE "champion" ADD COLUMN "popularity" INTEGER;
+```
 
 ### 3. Insertion de données
 Insérez le champion Fiddlesticks dans la table `champions` avec les attributs suivants :
